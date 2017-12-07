@@ -1,0 +1,77 @@
+#!MANAGED-CONFIG https://m.win/backChina.conf interval=32400 strict=true
+[General]
+loglevel = notify
+bypass-system = true
+skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
+ipv6 = true
+
+
+[Proxy]
+SiChuan = custom, 2.3.3.3, 311, chacha20, fsadfg, https://m.win/SSEncrypt.module
+XuZhou = custom, 2.3.3.3, 311, chacha20, fsadfg, https://m.win/SSEncrypt.module
+ZhenJiang = custom, 2.3.3.3, 311, chacha20, fsadfg, https://m.win/SSEncrypt.module
+🇨🇳Taiwan = custom, 2.3.3.3, 311, chacha20, fsadfg, https://m.win/SSEncrypt.module
+🇭🇰HK = custom, 2.3.3.3, 311, chacha20, fsadfg, https://m.win/SSEncrypt.module
+🇸🇬Singapore = custom, 2.3.3.3, 311, chacha20, fsadfg, https://m.win/SSEncrypt.module
+🇺🇸America = custom, 2.3.3.3, 311, chacha20, fsadfg, https://m.win/SSEncrypt.module
+🇯🇵JP = custom, 2.3.3.3, 311, chacha20, fsadfg, https://m.win/SSEncrypt.module
+Local = DIRECT
+
+[Proxy Group]
+Youtube = select, Local, 🇭🇰HK, 🇨🇳Taiwan, 🇺🇸America, 🇯🇵JP
+Netflix = select, Local, 🇸🇬Singapore, 🇨🇳Taiwan, 🇺🇸America, 🇯🇵JP
+🇨🇳China = url-test, SiChuan, XuZhou, ZhenJiang, url = http://www.baidu.com/generate_204, interval = 600, tolerance = 30
+Location = select, Local, 🇯🇵JP, 🇨🇳China
+[Rule]
+USER-AGENT,NeteaseMusic,🇨🇳China
+USER-AGENT,网易云音乐,🇨🇳China
+DOMAIN-SUFFIX,baidu.com,🇨🇳China
+DOMAIN-SUFFIX,126.net,🇨🇳China
+DOMAIN-SUFFIX,163.com,🇨🇳China
+DOMAIN-KEYWORD,youku,🇨🇳China
+DOMAIN-SUFFIX,ykimg.com,🇨🇳China
+DOMAIN-SUFFIX,irs01.com,🇨🇳China
+DOMAIN-SUFFIX,nflxext.com,Netflix
+DOMAIN-SUFFIX,netflix.com,Netflix
+DOMAIN-KEYWORD,nflxso,Netflix
+DOMAIN-KEYWORD,nflximg,Netflix
+DOMAIN-KEYWORD,nflxvideo,Netflix
+DOMAIN-KEYWORD,googlevideo,Youtube
+DOMAIN-SUFFIX,youtube-nocookie.com,Youtube
+DOMAIN-SUFFIX,youtube.com,Youtube
+IP-CIDR,66.197.128.0/17,Netflix,no-resolve
+IP-CIDR,64.120.128.0/17,Netflix,no-resolve
+IP-CIDR,45.57.0.0/16,Netflix,no-resolve
+IP-CIDR,37.77.0.0/16,Netflix,no-resolve
+IP-CIDR,23.246.0.0/16,Netflix,no-resolve
+IP-CIDR,198.45.0.0/16,Netflix,no-resolve
+IP-CIDR,198.38.0.0/16,Netflix,no-resolve
+IP-CIDR,192.173.0.0/16,Netflix,no-resolve
+IP-CIDR,185.9.0.0/16,Netflix,no-resolve
+IP-CIDR,185.2.0.0/16,Netflix,no-resolve
+IP-CIDR,108.175.0.0/16,Netflix,no-resolve
+IP-CIDR,52.71.40.0/16,Netflix,no-resolve
+IP-CIDR,54.175.0.0/16,Netflix,no-resolve
+IP-CIDR,52.5.0.0/16,Netflix,no-resolve
+IP-CIDR,54.85.0.0/16,Netflix,no-resolve
+IP-CIDR,52.1.0.0/16,Netflix,no-resolve
+IP-CIDR,23.78.0.0/16,Netflix,no-resolve
+IP-CIDR,52.54.0.0/16,Netflix,no-resolve
+IP-CIDR,34.192.0.0/16,Netflix,no-resolve
+IP-CIDR,52.22.0.0/16,Netflix,no-resolve
+IP-CIDR,52.7.0.0/16,Netflix,no-resolve
+IP-CIDR,54.86.0.0/16,Netflix,no-resolve
+IP-CIDR,52.72.0.0/16,Netflix,no-resolve
+IP-CIDR,52.0.0.0/16,Netflix,no-resolve
+IP-CIDR,54.0.0.0/16,Netflix,no-resolve
+IP-CIDR,192.168.0.0/16,DIRECT
+IP-CIDR,10.0.0.0/8,DIRECT
+IP-CIDR,172.16.0.0/12,DIRECT
+IP-CIDR,127.0.0.0/8,DIRECT
+GEOIP,CN,🇨🇳China
+FINAL,Location
+
+[URL Rewrite]
+
+[SSID Setting]
+"Apple Store" suspend=true
