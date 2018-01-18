@@ -20,7 +20,7 @@ https://github.com/sumsethan/MySurgeRule/raw/master/Rules/BacktoChina.conf
 ------
 2018.1.18更新
  - 添加SurgeRecommand规则，大幅精简。
- - 增加内网穿透规则，需在内网建一SS服务器后使用内网穿透服务暴露到外网。
+ - 增加内网穿透规则，需在内网建一SS服务器后使用内网穿透服务暴露到外网。
  - 增加前置代理规则，方便使用其他代理软件。
  
 2017.12.7
