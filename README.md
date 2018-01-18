@@ -1,7 +1,6 @@
 # MySurgeRule
 
-
-自己用的一些Surge配置文件
+自己用的一些Surge配置文件。包含的服务器均无效，请自行替换服务器。
 
 ## 出国规则<br>
  - 基于Scomper http://t.cn/RQo6viU ,添加一些自用规则及自己收集总结的netflix规则。<br>
