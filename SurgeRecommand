@@ -18,19 +18,19 @@ test-connectivity = true
 hide-crashlytics-request = true
 
 [Proxy]
-🇲🇴深圳-CTM = custom, ctm.cn, 12345, chacha20, abcde, https://github.com/lhie1/Surge/blob/master/SSEncrypt.module
-🇯🇵北京-Linode = custom, jp.cn, 12345, chacha20, abcde, https://github.com/lhie1/Surge/blob/master/SSEncrypt.module
-🇭🇰深圳-WTT = custom, hk.cn, 12345, chacha20, abcde, https://github.com/lhie1/Surge/blob/master/SSEncrypt.module
-🇰🇷杭州-KT = custom, kr.cn, 12345, chacha20, abcde, https://github.com/lhie1/Surge/blob/master/SSEncrypt.module
-🇸🇬上海-Leaseweb = custom, sg.cn, 12345, chacha20, abcde, https://github.com/lhie1/Surge/blob/master/SSEncrypt.module
-🇺🇸杭州-Zenlayer = custom, us.cn, 12345, chacha20, abcde, https://github.com/lhie1/Surge/blob/master/SSEncrypt.module
-🇨🇳杭州阿里云 = custom, cn1.cn, 12345, chacha20, abcde, https://github.com/lhie1/Surge/blob/master/SSEncrypt.module
-🇨🇳香港 = custom, cn2.cn, 12345, chacha20, abcde, https://github.com/lhie1/Surge/blob/master/SSEncrypt.module
-🇨🇳四川移动 = custom, cn3.cn, 30910, chacha20, abcde, https://github.com/lhie1/Surge/blob/master/SSEncrypt.module
-🇨🇳徐州联通 = custom, cn4.cn, 30910, chacha20, abcde, https://github.com/lhie1/Surge/blob/master/SSEncrypt.module
-🇨🇳贵州电信 = custom, cn5.cn, 30910, chacha20, abcde, https://github.com/lhie1/Surge/blob/master/SSEncrypt.module
-🇨🇳江苏移动 = custom, cn6.cn, 30910, chacha20, abcde, https://github.com/lhie1/Surge/blob/master/SSEncrypt.module
-♻️Frp = custom, frp.cn, 12345, chacha20, abcde, https://github.com/lhie1/Surge/blob/master/SSEncrypt.module
+🇲🇴深圳-CTM = custom, ctm.cn, 12345, chacha20, abcde, https://github.com/sumsethan/MySurgeRule/blob/master/SSEncrypt.module
+🇯🇵北京-Linode = custom, jp.cn, 12345, chacha20, abcde, https://github.com/sumsethan/MySurgeRule/blob/master/SSEncrypt.module
+🇭🇰深圳-WTT = custom, hk.cn, 12345, chacha20, abcde, https://github.com/sumsethan/MySurgeRule/blob/master/SSEncrypt.module
+🇰🇷杭州-KT = custom, kr.cn, 12345, chacha20, abcde, https://github.com/sumsethan/MySurgeRule/blob/master/SSEncrypt.module
+🇸🇬上海-Leaseweb = custom, sg.cn, 12345, chacha20, abcde, https://github.com/sumsethan/MySurgeRule/blob/master/SSEncrypt.module
+🇺🇸杭州-Zenlayer = custom, us.cn, 12345, chacha20, abcde, https://github.com/sumsethan/MySurgeRule/blob/master/SSEncrypt.module
+🇨🇳杭州阿里云 = custom, cn1.cn, 12345, chacha20, abcde, https://github.com/sumsethan/MySurgeRule/blob/master/SSEncrypt.module
+🇨🇳香港 = custom, cn2.cn, 12345, chacha20, abcde, https://github.com/sumsethan/MySurgeRule/blob/master/SSEncrypt.module
+🇨🇳四川移动 = custom, cn3.cn, 30910, chacha20, abcde, https://github.com/sumsethan/MySurgeRule/blob/master/SSEncrypt.module
+🇨🇳徐州联通 = custom, cn4.cn, 30910, chacha20, abcde, https://github.com/sumsethan/MySurgeRule/blob/master/SSEncrypt.module
+🇨🇳贵州电信 = custom, cn5.cn, 30910, chacha20, abcde, https://github.com/sumsethan/MySurgeRule/blob/master/SSEncrypt.module
+🇨🇳江苏移动 = custom, cn6.cn, 30910, chacha20, abcde, https://github.com/sumsethan/MySurgeRule/blob/master/SSEncrypt.module
+♻️Frp = custom, frp.cn, 12345, chacha20, abcde, https://github.com/sumsethan/MySurgeRule/blob/master/SSEncrypt.module
 🌐SSR-Proxy = socks5, 127.0.0.1, 1086, , 
 [Proxy Group]
 Proxy = select, 🇲🇴深圳-CTM, 🇯🇵北京-Linode, 🇭🇰深圳-WTT, 🇰🇷杭州-KT, 🇸🇬上海-Leaseweb, 🇺🇸杭州-Zenlayer, 🌐SSR-Proxy
