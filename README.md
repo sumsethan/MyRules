@@ -1,10 +1,10 @@
 # MySurgeRule
 
-自己用的一些Surge配置文件。**包含的服务器均无效，请自行替换服务器。**
+ - 自己用的一些Surge配置文件。**包含的服务器均无效，请自行替换服务器。**
 
-DNS包括**SYSUv6-DNS**http://t.cn/RIodIT8
+ - DNS包括**SYSUv6-DNS** http://t.cn/RIodIT8
 
-包括内网穿透规则
+ - 包括内网穿透规则
 
 ------
 
