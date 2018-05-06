@@ -15,7 +15,7 @@
  - SurgeRecommand规则<br>
     https://github.com/sumsethan/MySurgeRule/raw/master/Rules/SurgeRecommand.conf
 
- - Surfboard规则
+ - Surfboard规则，适用于三星国行手机。<br>
     https://github.com/sumsethan/MySurgeRule/raw/master/Rules/Surfboard.conf    
 
 ## 回国规则<br>
