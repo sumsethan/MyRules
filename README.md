@@ -15,12 +15,19 @@
  - SurgeRecommand规则<br>
     https://github.com/sumsethan/MySurgeRule/raw/master/Rules/SurgeRecommand.conf
 
+ - Surfboard规则
+    https://github.com/sumsethan/MySurgeRule/raw/master/Rules/Surfboard.conf    
+
 ## 回国规则<br>
  - 方便妹子翻回国内看视频听音乐用，包括YouTube及Netflix区域选择及国内节点自动测速链接，同时短时间肉身回国时可以选择Location切换默认线路<br>
   https://github.com/sumsethan/MySurgeRule/raw/master/Rules/BacktoChina.conf
 
 
 ------
+2018.5.8更新
+ - 添加Surfboard规则.
+ - 更新其他规则，去除URL Rewrite。
+
 2018.1.18更新
  - 添加SurgeRecommand规则，大幅精简。
  - 增加内网穿透规则，需在内网建一SS服务器后使用内网穿透服务暴露到外网。
