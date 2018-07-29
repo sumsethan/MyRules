@@ -4,7 +4,7 @@
 
  - 部分DNS包括**SYSUv6-DNS** http://t.cn/RIodIT8
 
- - 包括内网穿透规则
+ - 包括内网穿透规则,具体方式见 https://github.com/fatedier/frp
 
 ------
 
@@ -32,7 +32,7 @@
 
 2018.5.20更新
  - 添加macServer规则。
- 
+
 2018.5.6更新
  - 添加Surfboard规则。
  - 更新其他规则，去除URL Rewrite。
