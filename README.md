@@ -4,7 +4,7 @@
 
  - 包括内网穿透规则,具体方式见 https://github.com/fatedier/frp
 
- - Surfboard 是一个兼容Surge配置文件的Android端网络调试代理工具,官网: https://manual.getsurfboard.com <br>支持的Surge特性有: <br> **[General]** 组,用于定义udp-relay，dns-server和skip-proxy。<br>**[Proxy]** 组,目前支持 Socks5 , HTTP , HTTPS , Shadowsocks 四种代理方式,同时可以使用「direct」和「reject」作为代理方式。<br> **[Proxy Group]** 组，目前只支持select组。 **[Rule]** 组，目前只支持DOMAIN类、IP类、GEOIP类和FINAL类规则。<br> **[Host]** 组。<br>具体用法可见如下规则。 
+ - Surfboard 是一个兼容Surge配置文件的Android端网络调试代理工具,官网: https://manual.getsurfboard.com <br>支持的Surge特性有: <br> **[General]** 组,用于定义udp-relay，dns-server和skip-proxy。<br>**[Proxy]** 组,目前支持 Socks5 , HTTP , HTTPS , SS 四种代理方式,同时可以使用「direct」和「reject」作为代理方式。<br> **[Proxy Group]** 组，目前只支持select组。<br> **[Rule]** 组，目前只支持DOMAIN类、IP类、GEOIP类和FINAL类规则。<br> **[Host]** 组。<br>具体用法可见如下规则。 
 
 ------
 
