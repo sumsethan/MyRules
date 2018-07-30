@@ -12,8 +12,8 @@
  - Surfboard规则，适用于三星国行手机<br>
     https://github.com/sumsethan/MyRules/raw/master/Rules/Surfboard.conf    
 
- - Surge 规则
-  - 基于Scomper http://t.cn/RQo6viU ,添加一些自用规则及自己收集总结的netflix规则。<br>
+
+  - Surge规则,基于Scomper http://t.cn/RQo6viU ,添加一些自用规则及自己收集总结的netflix规则。<br>
   https://github.com/sumsethan/MyRules/raw/master/Rules/CrossWall.conf
 
   - SurgeRecommand规则<br>
