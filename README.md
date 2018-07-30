@@ -9,21 +9,24 @@
 ------
 
 ## 出国规则<br>
- - 基于Scomper http://t.cn/RQo6viU ,添加一些自用规则及自己收集总结的netflix规则。<br>
-  https://github.com/sumsethan/MyRules/raw/master/Rules/CrossWall.conf
-
- - SurgeRecommand规则<br>
-    https://github.com/sumsethan/MyRules/raw/master/Rules/SurgeRecommand.conf
-
  - Surfboard规则，适用于三星国行手机<br>
     https://github.com/sumsethan/MyRules/raw/master/Rules/Surfboard.conf    
 
- - macServer规则，适用Surge网关<br>
+ - Surge 规则
+  - 基于Scomper http://t.cn/RQo6viU ,添加一些自用规则及自己收集总结的netflix规则。<br>
+  https://github.com/sumsethan/MyRules/raw/master/Rules/CrossWall.conf
+
+  - SurgeRecommand规则<br>
+    https://github.com/sumsethan/MyRules/raw/master/Rules/SurgeRecommand.conf
+
+ 
+  - macServer规则，适用Surge网关<br>
     https://github.com/sumsethan/MyRules/raw/master/Rules/macServer.conf
 
 ## 回国规则<br>
- - 方便妹子翻回国内看视频听音乐用，包括YouTube及Netflix区域选择及国内节点自动测速链接，同时短时间肉身回国时可以选择Location切换默认线路<br>
-  https://github.com/sumsethan/MyRules/raw/master/Rules/BacktoChina.conf
+ - for Surge
+  - 方便妹子翻回国内看视频听音乐用，包括YouTube及Netflix区域选择及国内节点自动测速链接，同时短时间肉身回国时可以选择Location切换默认线路<br>
+    https://github.com/sumsethan/MyRules/raw/master/Rules/BacktoChina.conf
 
 
 ------
