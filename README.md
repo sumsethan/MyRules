@@ -2,9 +2,9 @@
 
  - 自己用的一些Surge配置文件。**包含的服务器均无效，请自行替换服务器。**
 
- - 部分DNS包括**SYSUv6-DNS** http://t.cn/RIodIT8
-
  - 包括内网穿透规则,具体方式见 https://github.com/fatedier/frp
+
+ - Surfboard 详见 https://manual.getsurfboard.com ,目前支持 Socks5 , HTTP , HTTPS , Shadowsocks 四种代理方式,支持Proxy Group,同时可以在Proxy组中使用「direct」和「reject」作为代理方式。具体用法可见如下规则。 
 
 ------
 
