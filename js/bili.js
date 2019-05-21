@@ -11,7 +11,7 @@ if (url.indexOf(path1) != -1){
   obj.data.vip.due_date = 3041424000000;
   obj.data.vip.status = 1;
   obj.data.vip.type = 2;
-  obj.data.vip_section.title = "🍀Meeta(1080p60),vip仅自慰";
+  obj.data.vip_section.title = "ozOGen";
  result = JSON.stringify(obj);
   
 }
