@@ -1,10 +1,14 @@
 # MyRules
 
- - 自己用的一些Surge配置文件。**包含的服务器均无效，请自行替换服务器。**
+ - 自己用的一些Surge&Clash配置文件。**包含的服务器均无效，请自行替换服务器。**
 
  - 包括内网穿透规则,具体方式见 https://github.com/fatedier/frp
 
- - Surfboard 是一个兼容Surge配置文件的Android端网络调试代理工具,官网: https://manual.getsurfboard.com <br>目前[Ver. 0.8.5.0729 (26)]支持的Surge特性有: <br> **[General]** 组,目前只用于定义udp-relay，dns-server和skip-proxy。<br>**[Proxy]** 组,目前支持 Socks5 , HTTP , HTTPS , SS 四种代理方式,同时可以使用「direct」和「reject」作为代理方式。<br> **[Proxy Group]** 组，目前只支持select类。<br> **[Rule]** 组，目前只支持DOMAIN类、IP类和FINAL类规则。<br> **[Host]** 组。<br>具体用法可见如下规则。 
+   2020年更新起不再更新Surfboard配置文件，因本人已转用Clash for Android
+
+ - Surfboard 配置文件支持到 [Ver. 0.8.5.0729 (26)]<br>
+
+ - 具体用法可见如下规则。 
 
 ------
 
@@ -14,12 +18,12 @@
 
 
   - Surge规则,基于Scomper http://t.cn/RQo6viU ,添加一些自用规则及自己收集总结的netflix规则。<br>
-  https://github.com/sumsethan/MyRules/raw/master/Rules/CrossWall.conf
+    https://github.com/sumsethan/MyRules/raw/master/Rules/CrossWall.conf
 
   - SurgeRecommand规则<br>
     https://github.com/sumsethan/MyRules/raw/master/Rules/SurgeRecommand.conf
 
- 
+
   - macServer规则，适用Surge网关<br>
     https://github.com/sumsethan/MyRules/raw/master/Rules/macServer.conf
 
@@ -28,9 +32,13 @@
   - 方便妹子翻回国内看视频听音乐用，包括YouTube及Netflix区域选择及国内节点自动测速链接，同时短时间肉身回国时可以选择Location切换默认线路<br>
     https://github.com/sumsethan/MyRules/raw/master/Rules/BacktoChina.conf
 
-
 ------
+2020.2.1更新
+
+- 更新Clash规则，适用于 Clash Linux 版及 Clash for Android
+
 2018.7.29更新
+
  - 更新Surfboard规则，添加去广告开关、直连线路选择等「适用于Surfboard 0.8.5.0729 (26)及之后版本」。
 
 2018.5.20更新
