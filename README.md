@@ -4,7 +4,7 @@
 
  - 包括内网穿透规则,具体方式见 https://github.com/fatedier/frp
 
-   2020年更新起不再更新Surfboard配置文件，因本人已转用Clash for Android
+   2020年更新起不再更新Surfboard配置文件，因本人已转用 [Clash for Android](https://github.com/Kr328/ClashForAndroid)
 
  - Surfboard 配置文件支持到 [Ver. 0.8.5.0729 (26)]<br>
 
@@ -35,13 +35,14 @@
 ------
 2020.2.1更新
 
-- 更新Clash规则，适用于 Clash Linux 版及 Clash for Android
+- 更新Clash规则，适用于 Clash Linux 版及 [Clash for Android](https://github.com/Kr328/ClashForAndroid)
 
 2018.7.29更新
 
  - 更新Surfboard规则，添加去广告开关、直连线路选择等「适用于Surfboard 0.8.5.0729 (26)及之后版本」。
 
 2018.5.20更新
+
  - 添加macServer规则。
 
 2018.5.6更新
