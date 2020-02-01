@@ -1,0 +1,125 @@
+
+homeassistant:
+  name: Home
+  latitude: 33.100685
+  longitude: 115.267524
+  elevation: 30
+  unit_system: metric
+  time_zone: Asia/Shanghai
+  customize: !include customize.yaml 
+  packages: !include_dir_named custom_components 
+
+panel_iframe:
+  configurator:
+    title: Configurator
+    icon: mdi:wrench
+    url: http://10.1.10.10:3218
+  dash:
+    title: 面板
+    icon: mdi:microsoft
+    url: /local/dash.html
+    
+homekit:
+  auto_start: true
+  port: 51827
+  filter:
+    include_entities:
+    - sensor.zm1_b0f89524cf30_hcho
+    - sensor.zm1_b0f89524cf30_pm25
+    - sensor.zm1_b0f89524cf30_temperature
+    - sensor.zm1_b0f89524cf30_humidity
+  
+mqtt:
+  broker: 127.0.0.1
+  port: 1883
+  username: mqtt
+  password: mqtt
+
+system_health:  
+frontend:
+config:
+http:
+
+sun:
+weather:
+  - platform: caiyun
+    name: CaiYun
+    scan_interval: 1200
+    latitude: 33.100685
+    longitude: 115.267524
+
+sensor:
+  - platform: mqtt
+    name: 'zm1_b0f89524cf30_temperature'
+    state_topic: 'device/zm1/b0f89524cf30/sensor'
+    unit_of_measurement: '°C'
+    icon: 'mdi:thermometer'
+    value_template: '{{ value_json.temperature }}'
+  - platform: mqtt
+    name: 'zm1_b0f89524cf30_humidity'
+    state_topic: 'device/zm1/b0f89524cf30/sensor'
+    unit_of_measurement: '%'
+    icon: mdi:water-percent
+    value_template: '{{ value_json.humidity }}'
+  - platform: mqtt
+    name: 'zm1_b0f89524cf30_pm25'
+    state_topic: 'device/zm1/b0f89524cf30/sensor'
+    unit_of_measurement: 'μg/m³'
+    icon: mdi:blur
+    value_template: '{{ value_json.PM25 }}'
+  - platform: mqtt
+    name: 'zm1_b0f89524cf30_hcho'
+    state_topic: 'device/zm1/b0f89524cf30/sensor'
+    unit_of_measurement: 'mg/m³'
+    icon: mdi:chemical-weapon
+    value_template: '{{ value_json.formaldehyde }}'
+
+tts:
+  - platform: google_translate
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+
+molohub:
+
+automation:
+#获取zM1亮度
+  - alias: get_zm1_brightness_b0f89524cf30
+    trigger:
+      platform: mqtt
+      topic: 'device/zm1/b0f89524cf30/state'
+    action:
+      - service: homeassistant.turn_off
+        data:
+          entity_id: automation.set_zm1_brightness_b0f89524cf30
+      - service: input_number.set_value
+        data_template:
+          entity_id: input_number.zm1_brightness_b0f89524cf30
+          value: "{{ trigger.payload_json.brightness }}"
+#设置zM1亮度
+  - alias: set_zm1_brightness_b0f89524cf30
+    trigger:
+      platform: state
+      entity_id: input_number.zm1_brightness_b0f89524cf30
+    action:
+      - service: homeassistant.turn_on
+        data:
+          entity_id: automation.set_zm1_brightness_b0f89524cf30
+      - service: mqtt.publish
+        data_template:
+          topic: 'device/zm1/b0f89524cf30/set'
+          retain: false
+          payload: "{\"mac\":\"b0f89524cf30\",\"brightness\":{{ states('input_number.zm1_brightness_b0f89524cf30') | int }}}"
+#设置zM1发送亮度自动化延时打开
+  - alias: open_set_zm1_brightness_b0f89524cf30_delay
+    trigger:
+      platform: mqtt
+      topic: 'device/zm1/b0f89524cf30/state'
+    action:
+      - delay: 00:00:00.20
+      - service: homeassistant.turn_on
+        data:
+          entity_id: automation.set_zm1_brightness_b0f89524cf30
