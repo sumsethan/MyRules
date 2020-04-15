@@ -2,7 +2,7 @@
 #!desc=Use DoH as defaule and only dns service.
 
 [General]
-dns-server = https://223.5.5.5/dns-query, https://dns.nextdns.io/fe986c, https://ea-dns.rubyfish.cn/dns-query, https://dns.rubyfish.cn, https://i.233py.com/dns-query, https://driller.pub/dq, https://harder.press/dq, https://jp.driller.pub/dq
+dns-server = https://dns.nextdns.io/fe986c, https://ea-dns.rubyfish.cn/dns-query, https://dns.rubyfish.cn, https://i.233py.com/dns-query, https://driller.pub/dq, https://harder.press/dq, https://jp.driller.pub/dq
 
 [Host]
 dns.nextdns.io = server:223.6.6.6
